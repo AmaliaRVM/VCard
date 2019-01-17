@@ -1,0 +1,21 @@
+.vcard {
+    display: grid;
+    grid-template-columns: 
+    grid-template-rows: 
+}
+
+.header {
+    grid-column: span 12;
+}
+
+.photo {
+    grid-column: span 4;
+}
+
+.aboutme {
+    grid-column: span 8;
+}
+
+.footer {
+    grid-column: span 12;
+}
