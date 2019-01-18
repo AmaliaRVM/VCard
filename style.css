@@ -1,21 +1,72 @@
+body {
+    background-image: url("images/light.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
 .vcard {
     display: grid;
-    grid-template-columns: 
-    grid-template-rows: 
-}
-
-.header {
-    grid-column: span 12;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px 250px;;
+    grid-gap: 3px;
+    grid-template-areas: 
+    "p i i"
+    "a a a"
+    "m l g";
+    width: 400px;
+    margin-left: 25%;
+    margin-top: 10px;
 }
 
 .photo {
-    grid-column: span 4;
+   grid-area: p;
+   border: 2px solid black;
+   padding-top: 10px;
+   padding-left: 30px;
+   background-color: white;
+   
+}
+
+.info {
+    grid-area: i;
+    border: 2px solid black;
+    text-justify: auto;
+    background-color: white;
+    padding: 20px;
 }
 
 .aboutme {
-    grid-column: span 8;
+    grid-area: a;
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+    text-align: center;
 }
 
-.footer {
-    grid-column: span 12;
+.footerM {
+    grid-area: m;
+    border: 2px solid black;
+    -webkit-border-radius: 20px 50px 20px 50px;
+    border-radius: 20px 50px 20px 50px;
+    background-color: white;
+    padding: 60px;
+}
+
+.footerL {
+    grid-area: l;
+    border: 2px solid black;
+    -webkit-border-radius: 20px 50px 20px 50px;
+    border-radius: 20px 50px 20px 50px;
+    background-color: white;
+    padding: 60px;
+}
+
+.footerG {
+    grid-area: g;
+    border: 2px solid black;
+    -webkit-border-radius: 20px 50px 20px 50px;
+    border-radius: 20px 50px 20px 50px;
+    background-color: white;
+    padding: 60px;
 }
